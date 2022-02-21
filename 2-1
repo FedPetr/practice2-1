@@ -66,3 +66,36 @@ int main() {
     accept();
     return 0;
 }
+
+3 задание:
+
+#include <iostream>
+
+#include <windows.h>
+
+using namespace std;
+
+bool accept(){
+    int n;
+    cin >> n;
+     if ((n % 10 == 1) and (n % 100 != 11)){
+         cout << "яблоко" << endl;
+        }
+     else if ((n % 10 > 1) and (n % 10 < 5)){
+         cout << "яблока" << endl;
+        }
+     else
+     {
+         cout << "яблок" << endl;
+
+    }
+    return 0;
+}
+
+int main()
+{
+    SetConsoleOutputCP(CP_UTF8);
+    cout << "Введите количество яблок" << endl;
+    accept();
+    return 0;
+}
